@@ -24,7 +24,7 @@ app.use(helmet());
 // Set CLIENT_URL in .env when you deploy. Until then we use the Vite address.
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 );
